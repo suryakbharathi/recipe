@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="search-area">
+        <span class="search-bg">
+            <span class="search-icon"></span>
+        </span>
+        <label>
+            <input class="search-input" placeholder="Search your favourite recipe..." (keydown.enter)="searchRecipe()" (keypress)="searchRecipe()" (keydown)="onSearchback($event)" (backspace)="searchRecipe()" [(ngModel)]="searchData" >
+        </label>
+        <div class="model" *ngIf="searchData">
+            <div *ngFor="let li of suggestedList"> {{li}} </div>
+        </div>
+    </div>
+    <div class="df category">
+        <div> CATEGORY </div>
+        <div class="cate-header"> Pizza & Noodles </div>
+    </div>
+    <div class="df list-outlet">
+        <div *ngFor="let data of recipeList;">
+            <div class="recipe-card" (click)="goToDetails(data)" [ngStyle]="{'background-image': 'url(' + data.image + ')' }"> 
+                <div class="recipe-data">
+                    <div>
+                        <div style="font-weight: 900;"> {{data.name}} </div>
+                        <div class="time-icon"> <span class="font14"> 24 mins </span>  </div>
+                    </div>
+                    <div class="font12">
+                        {{data.description}}
+                    </div>
+                </div>
+                <div class="tag"> {{data.category}} </div>
+            </div>
+        </div>
+    </div>
+</div>

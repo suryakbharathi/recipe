@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: MetropolisLight;
+    src: url('../src/assets/Fonts/Metropolis/Metropolis-Light.otf') format(opentype);
+}
+.df {
+    display: flex;
+}
+
+html {
+    height: 100%;
+}
+  
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  height: 100%;
+  line-height: 1.4;
+  background-color: #f0f0f0;
+  margin: 2% 10%;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font12 {
+    font-size: 12px;
+}
