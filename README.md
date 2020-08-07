@@ -1,5 +1,5 @@
 # CodaGlobal
-For demo, click http://coda-global-kitchen.surge.sh/receipes.
+For demo, click http://coda-global-kitchen.surge.sh.
 
 This project was generated  with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
